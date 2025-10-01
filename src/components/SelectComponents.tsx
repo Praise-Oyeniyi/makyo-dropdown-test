@@ -63,7 +63,7 @@ const SelectComponents = ({ options, multiple, searchable, highlightColor, textC
               <div className='w-full flex gap-x-10 justify-between items-center'>
                 <label htmlFor="select" className='text-sm font-medium w-1/6'>{placeholder + ":"}</label>
   
-                <div ref={triggerRef} id="select" className="min-w-5/6 bg-red-900 relative border rounded-sm h-10 px-2 focus:outline-none flex gap-x-2 justify-start items-center overflow-x-auto scrollbar-hide" style={{ borderColor }} onClick={()=>setOpen(!open)}>
+                <div ref={triggerRef} id="select" className="min-w-5/6 w-5/6 relative border rounded-sm h-10 px-2 focus:outline-none flex gap-x-2 justify-start items-center overflow-x-auto scrollbar-hide" style={{ borderColor }} onClick={()=>setOpen(!open)}>
                   {selected.length > 0 && selected.map((selectedItem, index) => (
                   <div key={index} className="flex items-center gap-x-2 rounded-full px-2 bg-gray-100 cursor-pointer flex-nowrap min-w-fit" style={{ color: textColor }}>
                     <button className='text-base font-medium'>{selectedItem}</button>
