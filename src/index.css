@@ -1,9 +1,4 @@
 @import "tailwindcss";
-/* 
-  Global styles extension.
-  - Use Tailwind's layer utilities for custom base, components, or utilities.
-  - Add any global resets or overrides here.
-*/
 
 @layer base {
   html {
